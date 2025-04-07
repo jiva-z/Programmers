@@ -3,7 +3,7 @@ def solution(numbers):
     numbers = list(map(str, numbers))
     
     # 정렬 기준을 설정
-    numbers.sort(key=lambda x: x*4, reverse=True)
+    numbers.sort(key=lambda x: x*3, reverse=True)
     
     # 0으로만 구성된 경우
     if numbers[0] == '0':
