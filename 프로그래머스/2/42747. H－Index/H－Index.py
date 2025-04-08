@@ -3,6 +3,9 @@ def solution(citations):
     
     n = len(citations)
     citations.sort()
-    answer = citations[int(len(citations)/2)]
+    for index in range(n):
+        h_index = min(citations[index], n-index)
+        if h_index > answer:
+            answer = h_index    
     
     return answer
